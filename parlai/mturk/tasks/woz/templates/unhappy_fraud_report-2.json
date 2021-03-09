@@ -1,0 +1,29 @@
+{
+  "title": "Unhappy fraud report",
+  "api_names": ["bank_fraud_report"],
+  "db": "bank.json",
+  "instructions": {
+    "User": {
+      "linear_guide": [
+        "`Fraud-1@bank` Quickly you contact the bank-system's AI assistant. Perhaps it can help?",
+        "You are `FullName@bank`. Your PIN is `PIN-1@bank`, but you forgot your account number. (You might need your childhood pet's name for the security questions: `Pet@bank`.)",
+        null,
+        "You forget what you are doing (imagine you're 93 years old and have some mental condition).",
+        "Keep this conversation going for a bit - you can be creative!",
+        null,
+        null,
+        null,
+        "Ok, great. Now bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Some facts you should be aware of: \n\n* You are the customer service AI of the international banking system",
+      "completion_questions": [
+        "Did the user seem confused? (He or she may have been instructed to be.)",
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? (Feel free to send us an email with details.)"
+      ]
+    }
+  }
+}

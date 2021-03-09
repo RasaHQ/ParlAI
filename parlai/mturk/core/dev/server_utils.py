@@ -217,7 +217,8 @@ def setup_heroku_server(
 
     heroku_app_name = (
         '{}-{}-{}'.format(
-            user_name,
+            # user_name,
+            "rasa",  # `user_name` may contain a `_`, which Heroku cannot handle
             task_name,
             hashlib.md5(heroku_user_identifier.encode('utf-8')).hexdigest(),
         )
@@ -308,7 +309,8 @@ def delete_heroku_server(task_name, tmp_dir=parent_dir):
 
     heroku_app_name = (
         '{}-{}-{}'.format(
-            user_name,
+            # user_name,
+            "rasa",  # `user_name` may contain a `_`, which Heroku cannot handle
             task_name,
             hashlib.md5(heroku_user_identifier.encode('utf-8')).hexdigest(),
         )

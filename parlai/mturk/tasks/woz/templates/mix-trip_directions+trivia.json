@@ -1,0 +1,29 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "trip_directions",
+    "trivia"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You want directions from '`Location-1@trip`' to '`Location-2@trip`', leaving now (`DepartureTime@trip`). As the assistant gives you the directions, alternate randomly between (i) asking for the next instruction, (ii) asking for more details, and (iii) asking for the next trivia question (start at question `QuestionStart@trivia`)\n\n The AI Assistant can handle:\n- Giving trip directions\n- Playing trivia"
+      ],
+      "linear_guide": [
+        "Say hello and ask for directions (see left panel).",
+        null,
+        null,
+        "If you haven't yet, start a game of trivia with the assistant while you're getting directions (see left panel).",
+        null,
+        null,
+        "Also ask for more details on some instructions.",
+        "Keep going until you've arrived at your destination. Then bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule` the `Date@plane`, `DepartureTime@trip`"
+    }
+  }
+}

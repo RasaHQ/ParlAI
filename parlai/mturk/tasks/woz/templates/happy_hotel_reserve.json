@@ -1,0 +1,25 @@
+{
+  "title": "Happy Hotel Reserve",
+  "db": "hotel.json",
+  "version": 1,
+  "api_names": ["hotel_reserve"],
+  "schema_urls": {
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You want to reserve a room at the @Name-1 from May @StartDate-1 to @EndDate-1. Your name is @CustomerName-1. Please do not make a custom request, and it is ok if no room is available - just say goodbye in this case.",
+        "Make a reservation at @Name-1 from May @StartDate-1 to @EndDate-1. Your name is @CustomerName-1. Please request @Request-1. It is ok if the room is not available - just say goodbye in this case."
+      ],
+      "completion_questions": [
+        "Did the assistant reserve your hotel?",
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user reserve a hotel room. "
+    }
+  }
+}

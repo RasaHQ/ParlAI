@@ -1,0 +1,52 @@
+{
+  "title": "Multitask",
+  "name": "Arriving in town",
+  "version": 1,
+  "api_names": ["book_ride", "ride_status", "ride_change", "hotel_search"],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg"
+  },
+  "instructions": {
+    "User": {
+      "completion_requirements": [
+        "The MTurk Assistant says you can end the conversation."
+      ],
+      "completion_questions": [
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ],
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. Do not end the dialogue before the MTurk bot has told you to do so. "
+      ],
+      "linear_guide": [
+        "Imagine: Your name is `CustomerName@ride`. You are on a train to some big city, and it occurs to you that you don't know how to get to your hotel. So you take out your phone and open your new AI assistant app. \n\nSay hello to your AI assistant!",
+        "Book a ride from the Central Station (this is where you are currently heading) to your hotel (`Name@hotel` in the `Location@hotel` of town). ",
+        "By the way, you prefer `ServiceProvider@ride` rides.",
+        null,
+        "You just remember that last time you took a `ServiceProvider@ride`, the driver was `AnnoyingTrade@generic`. So when you book the ride, make sure your driver is not `DriverName@ride`. If you have already booked, request a change. If you are booking right now, ask if `DriverName@ride` is the driver and, if so, request another.",
+        null,
+        "You get a text from the hotel: `ReasonHotelCancel@generic`, so unfortunately they cannot accommodate you tonight. Be creative! Perhaps your assistant can find another hotel in the `Location@hotel` for you? You'll also have to change your ride...",
+        null,
+        "When you look for accommodation, make sure that they offer `Request@hotel`. You don't have to book it. Just make sure you also change your ride to arrive at the new hotel.",
+        null,
+        null,
+        null,
+        null,
+        "You just arrived at the Central Station. Find out how far out your ride is (unless you've cancelled it).",
+        "Good! Bring the conversation to a natural close in the next few turns."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. (You can find the single-task video tutorial under https://youtu.be/USrWF1ZyNWw, in case you want to watch it again.)",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task."
+      ]
+    }
+  }
+}

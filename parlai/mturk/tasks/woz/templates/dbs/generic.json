@@ -1,0 +1,77 @@
+[
+  {
+    "Name": "MildInjury",
+    "Type": "Categorical",
+    "Categories": [
+      "stomped your big toe",
+      "cut your finger on something",
+      "feel a stinging pain in your shoulders (you've been lifting quite heavy weights last night)"
+    ]
+  },
+  {
+    "Name": "AnnoyingTrade",
+    "Type": "Categorical",
+    "Categories": [
+      "a bit annoying",
+      "way too chatty",
+      "constantly complaining about stuff"
+    ]
+  },
+  {
+    "Name": "ReasonHotelCancel",
+    "Type": "Categorical",
+    "Categories": ["The waterline broke", "Somebody took hostages in the lobby"]
+  },
+  {
+    "Name": "SmallNumber",
+    "Type": "Categorical",
+    "Categories": ["one", "two", "three"]
+  },
+  {
+    "Name": "RasonEarlyArrival",
+    "Type": "Categorical",
+    "Categories": [
+      "you could meet our new client for lunch",
+      "you could check up on our new office over there"
+    ]
+  },
+  {
+    "Name": "MessageAtWork",
+    "Type": "Categorical",
+    "Categories": [
+      "You get a text from your supervisor",
+      "Your colleague walks by and says"
+    ]
+  },
+  {
+    "Name": "CommentAboutFood",
+    "Type": "Categorical",
+    "Categories": [
+      "Remember Jenny was always so fond of this Thai place? I just checked it out, but man... my stomach absolutely cannot handle Thai food. Never again!",
+      "Pedro and I just had the most delicious Indian food ever! Chicken Tikka Masala! (not sure if I spell this right) I want to eat nothing else for the rest of my days! :D"
+    ]
+  },
+  {
+    "Name": "ImportantMeeting",
+    "Type": "Categorical",
+    "Categories": ["job interview", "hot date", "friend's wedding"]
+  },
+  {
+    "Name": "ReasonForAreaBlock",
+    "Type": "Categorical",
+    "Categories": [
+      "A bunch of dangerous animals broke out of the local zoo.",
+      "A truck loaded with highly toxic chemicals crashed and the whole area has to be evacuated."
+    ]
+  },
+  {
+    "Name": "Situation",
+    "Type": "Categorical",
+    "Categories": [
+      "You are in a cafe with a friend, making plans.",
+      "You are at the Hospital, either to visit someone, to work there, or as a patient.",
+      "You are on a train.",
+      "You are at home."
+    ]
+  }
+]

@@ -1,0 +1,25 @@
+{
+  "title": "Unhappy Followup Doctor Appointment",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["followup_doctor_appointment"],
+  "schema_urls": {
+    "followup_doctor_appointment": "https://i.imgur.com/OdjFGll.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You (`PersonName-1@schedule`) had an appointment with `DoctorName-1@schedule` the other day and would like to followup to ensure you understood everything.",
+        "You (`PersonName-1@schedule`) had an appointment with `DoctorName-1@schedule` the other day. Unfortunately, you forgot to write down the instructions the doctor gave you. Please followup and find out how often to take your medicine."
+      ],
+      "linear_guide": [
+        "In this dialogue, either act confused, like a person with memory problems, or act concerned about the effects of the medicine. ",
+        "Oh, `DoctorName-1@schedule` was actually your previous doctor. Your new doctor is `DoctorName-2@schedule` now. That's the one you had the appointment with.",
+        "Say something random about your doctors, your condition, or about something (imagined) that happened to you today. Then bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Inform the user of his/her doctor's orders."
+    }
+  }
+}

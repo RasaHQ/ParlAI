@@ -1,0 +1,26 @@
+{
+  "title": "Happy Book Apartment Viewing",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["book_apartment_viewing"],
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg",
+    "book_apartment_viewing": "https://i.imgur.com/rjpZovV.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are interested in viewing an apartment. Please schedule a viewing at @ApartmentName-1 for @Day-1 at @StartTimeHour-1. Your name is @PersonName-1. You have paid the application fee.",
+        "You are interested in viewing an apartment. Please schedule a viewing at @ApartmentName-1 for @Day-1 at @StartTimeHour-1. Your name is @PersonName-1. You have not paid the application fee.",
+        "You are interested in viewing an apartment. Please schedule a viewing at @ApartmentName-1 for @Day-1 at @StartTimeHour-1. Your name is @PersonName-1. You have paid the application fee. Please include the following message with your booking request: @ApartmentMessage-1"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user schedule an apartment viewing. "
+    }
+  }
+}

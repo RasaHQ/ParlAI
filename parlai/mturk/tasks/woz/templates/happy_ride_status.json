@@ -1,0 +1,31 @@
+{
+  "title": "Ride Status",
+  "name": "Ride Status",
+  "db": "ride.json",
+  "version": 1,
+  "api_names": ["ride_status"],
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @CustomerName-1 and your ride ID is @id-1. Check the status of your ride.",
+        "You (@CustomerName-1) have been waiting ages for your ride! Perhaps the car company forgot about your booking (id @id-1)? Ask the assistant what is going on.",
+        "Some hours ago you've booked a cab to pick up your friend from the airport. He's still not here. Ask the assistant about the status of his ride (booking id @id-1). You booked the ride under the name '@CustomerName-1'."
+      ],
+      "completion_requirements": ["You have checked the status of your ride."],
+      "completion_questions": [
+        "Did the AI Assistant tell you the status of your ride?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user stay informed about the status of his/her ride. "
+    }
+  }
+}

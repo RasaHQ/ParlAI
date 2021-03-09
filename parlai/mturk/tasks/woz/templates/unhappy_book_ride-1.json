@@ -1,0 +1,29 @@
+{
+  "title": "Happy Book Ride",
+  "version": 1,
+  "api_names": ["book_ride"],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You need a ride from '`Location-1@ride`' to '`Location-2@ride`' to get to your `ImportantMeeting@generic`. Your name is `CustomerName-1@ride`."
+      ],
+      "linear_guide": [
+        null,
+        "You really need to be there soon. If the car takes more than `DurationMinutes@ride` minutes to pick you up, ask for a different one.",
+        "Say something about your `ImportantMeeting@generic`. Be creative!",
+        "If your ride is a `ServiceProvider@ride`, make sure your driver is not `DriverName@ride`.",
+        "You realize that you are actually closer to `Location-3@ride` right now. If you haven't booked yet, change your departure location to there. Otherwise, say something about the service provider of your ride.",
+        "Once you have found a ride that suits you, book it and talk some more about your `ImportantMeeting@generic` or make a joke. Then end the conversation."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book a ride. "
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title": "Unhappy plane search",
+  "name": "Conference flight",
+  "version": 1,
+  "api_names": ["plane_search"],
+  "db": "ride.json",
+  "schema_urls": {
+    "apartment_search": "https://i.imgur.com/yICteJ1.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You (`CustomerName@plane`) need to attend a conference in `City-1@plane` on `Date-1@plane` June and should arrive at least a day before that. Ask the AI assistant to help you find a flight!"
+      ],
+      "linear_guide": [
+        "Read the instructions on the left. You'll be departing from `City-2@plane` and should look for economy class with `Airline-1@plane` Airlines (you don't want to book yet).",
+        null,
+        null,
+        "Interrupt the conversation with some smalltalk, e.g. about `Airline-1@plane` Airlines, the conference, or something that happened to you today.",
+        null,
+        "You get an email from the finance division: 'We just made a special deal with `Airline-2@plane` Airlines! So you may upgrade your flight to first class if its an `Airline-2@plane` Airlines flight'. You have to decide if you want to do this. Alternatively, you may want spend the extra money on carbon offsets.",
+        null,
+        "You get a message saying that some things will change in your schedule. When you fly out for the conference, you won't be departing from `City-2@plane`, but from `City-3@plane`. Make the necessary arrangements and find the flight (you still don't want to book yet).",
+        null,
+        "Ok. Make sure you have found a flight from `City-3@plane` to `City-1@plane` that gets you to your conference in time. Then bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. (You can find the single-task video tutorial under https://youtu.be/USrWF1ZyNWw, in case you want to watch it again.)",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Were you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task."
+      ]
+    }
+  }
+}

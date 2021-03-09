@@ -1,0 +1,26 @@
+{
+  "title": "Unhappy party plan",
+  "api_names": ["party_plan"],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are `HostName-1@schedule` and would like to plan a surprise party for your colleague `HostName-2@schedule`, who just got promoted. For the venue, you'd like to reserve `PartyName@schedule` for `Day-1@schedule` from `StartTimeHour-1@schedule`. "
+      ],
+      "linear_guide": [
+        "You (`HostName-1@schedule`) want to organize a surprise party (see instructions on the left). Talk to the AI assistant. Maybe it can help?",
+        "You'd expect about `SizeLimit-1@schedule` people to show up.",
+        "If nothing is available, change the day or reduce the number of guests until it works. ",
+        null,
+        "Interrupt the conversation with a little small talk (e.g. about `HostName-2@schedule`'s promotion, the party, other colleagues, or something else).",
+        null,
+        "You get a text from `HostName-2@schedule` saying: '`CommentAboutFood@generic`'.",
+        null,
+        "Make sure you have booked a venue. Then you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user plan a party. "
+    }
+  }
+}

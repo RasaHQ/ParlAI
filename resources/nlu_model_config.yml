@@ -1,0 +1,11 @@
+language: en
+
+pipeline:
+  - name: "ConveRTTokenizer"
+  - name: "ConveRTFeaturizer"
+  - name: "DIETClassifier"
+    number_of_transformer_layers: 1
+    epochs: 100
+    use_masked_language_model: False
+    intent_classification: True
+    entity_recognition: False

@@ -1,0 +1,32 @@
+{
+  "title": "Ride Change",
+  "name": "Ride Change",
+  "db": "ride.json",
+  "version": 1,
+  "api_names": ["ride_change"],
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @CustomerName-1 and your ride ID is @id-1. You must change your departure location to @Location-1, if possible.",
+        "You are @CustomerName-1 and your ride ID is @id-1. You must change your arrival location to @Location-1. If that's not possible, try to cancel your ride.",
+        "You are @CustomerName-1 and your ride ID is @id-1. You would like to cancel your ride, if possible.",
+        "You are @CustomerName-1 and your ride ID is @id-1. Change your ride to leave from @Location-1 and go to @Location-2, if possible."
+      ],
+      "completion_requirements": ["You have changed your ride."],
+      "completion_questions": [
+        "Did the AI Assistant successfully change your ride?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "The user had booked a ride. Help him/her make changes to his/her booking. "
+    }
+  }
+}

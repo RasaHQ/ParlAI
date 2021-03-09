@@ -1,0 +1,27 @@
+{
+  "title": "Plane Search",
+  "name": "Plane Search",
+  "db": "plane.json",
+  "version": 1,
+  "api_names": ["plane_search"],
+  "schema_urls": {
+    "plane_search": "https://i.imgur.com/F9p6MBi.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Search for a flight from @City-1 to @City-2 for May @Date-1.",
+        "Search for a flight between @City-1 to @City-2 for May @Date-1. Your flight should be with @Airline-1 airline.",
+        "Search for a flight between @City-1 to @City-2 for May @Date-1. Your flight should cost no more than @Price-1.",
+        "Search for a flight between @City-1 to @City-2 for May @Date-1. You want an @Class-1 seat."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant find you a suitable flight?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user find a suitable flight."
+    }
+  }
+}

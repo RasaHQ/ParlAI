@@ -1,0 +1,137 @@
+[
+  {
+    "Name": "Name",
+    "Type": "Categorical",
+    "Categories": [
+      "Shadyside Inn",
+      "Hilton Hotel",
+      "Hyatt Hotel",
+      "Old Town Inn"
+    ]
+  },
+  {
+    "Name": "CustomerName",
+    "Type": "Categorical",
+    "Categories": ["Mark", "John", "Ben", "Angela", "Alexis"]
+  },
+  {
+    "Name": "Room",
+    "Type": "Categorical",
+    "Categories": ["483", "301", "450", "351", "359"]
+  },
+  {
+    "Name": "Hour",
+    "Type": "Categorical",
+    "Categories": [
+      "12 am",
+      "1 am",
+      "2 am",
+      "3 am",
+      "4 am",
+      "5 am",
+      "6 am",
+      "7 am",
+      "8 am",
+      "9 am",
+      "10 am",
+      "11 am",
+      "12 pm",
+      "1 pm",
+      "2 pm",
+      "3 pm",
+      "4 pm",
+      "5 pm",
+      "6 pm",
+      "7 pm",
+      "8 pm",
+      "9 pm",
+      "10 pm",
+      "11 pm"
+    ]
+  },
+  {
+    "Name": "Cost",
+    "Type": "Categorical",
+    "Categories": ["Cheap", "Moderate", "Expensive"]
+  },
+  {
+    "Name": "ServiceRequest",
+    "Type": "Categorical",
+    "Categories": [
+      "I need more towels",
+      "I'd like to order a medium-rare steak and glass of red wine.",
+      "I'd like to order a cheeseburger, fries and two beers.",
+      "The AC isn't working in my room. I need it fixed immediately!"
+    ]
+  },
+  {
+    "Name": "Request",
+    "Type": "Categorical",
+    "Categories": ["extra towels", "two beds", "a balcony"]
+  },
+  { "Name": "TakesReservations", "Type": "Boolean" },
+  { "Name": "Service", "Type": "Boolean" },
+  { "Name": "AverageRating", "Type": "Integer", "Min": 1, "Max": 5 },
+  {
+    "Name": "StartDate",
+    "Type": "Categorical",
+    "Categories": [
+      "1st",
+      "2nd",
+      "3rd",
+      "4th",
+      "5th",
+      "6th",
+      "7th",
+      "8th",
+      "9th",
+      "10th",
+      "11th",
+      "12th",
+      "13th",
+      "14th",
+      "15th"
+    ]
+  },
+  {
+    "Name": "EndDate",
+    "Type": "Categorical",
+    "Categories": [
+      "16th",
+      "17th",
+      "18th",
+      "19th",
+      "20th",
+      "21st",
+      "22nd",
+      "23rd",
+      "24th",
+      "25th",
+      "26th",
+      "27th",
+      "28th",
+      "29th",
+      "30th",
+      "31st"
+    ]
+  },
+  {
+    "Name": "ServiceStartHour",
+    "Type": "Integer",
+    "Min": 6,
+    "Max": 10,
+    "Enabled": "!lambda p: p[\"Service\"]"
+  },
+  {
+    "Name": "ServiceStopHour",
+    "Type": "Integer",
+    "Min": 15,
+    "Max": 23,
+    "Enabled": "!lambda p: p[\"Service\"]"
+  },
+  {
+    "Name": "Location",
+    "Type": "Categorical",
+    "Categories": ["South", "West", "East", "North", "Center"]
+  }
+]

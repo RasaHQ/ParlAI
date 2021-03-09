@@ -1,0 +1,38 @@
+{
+  "title": "Book Ride",
+  "name": "Book Ride",
+  "version": 1,
+  "api_names": ["book_ride"],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You want a ride from '`Location-1@ride`' to '`Location-2@ride`'. Your name is `CustomerName-1@ride`.",
+        "You are `CustomerName-1@ride` and urgently need to find a ride from '`Location-1@ride`' to '`Location-2@ride`'. You want to avoid taking a `ServiceProvider-1@ride` though.",
+        "You are `CustomerName-1@ride`. You want to grab your usual `ServiceProvider-1@ride` ride to '`Location-2@ride`', but you don't want `DriverName-1@ride` as your driver. Right now you are at `Location-1@ride`.",
+        "You are `CustomerName-1@ride` and would like to travel to `Location-2@ride` from `Location-1@ride` (in a `CarModel-1@ride` car if possible). Please provide one piece of information at a time."
+      ],
+      "linear_guide": [
+        null,
+        null,
+        "You remember, last time your driver was `DriverName-2@ride` and he got lost and you ended up missing an important appointment. Make sure you get another driver this time.",
+        "You forgot that your friend told you to meet at the BrewLab cafe at `Location-3@ride` not `Location-2@ride`. Tell the assistant you want a ride to `Location-3@ride`.",
+        "You are a big fan of classy European cars. Ask for the car to be a BMW."
+      ],
+      "completion_questions": [
+        "Did the assistant find you a suitable ride?",
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book a ride. (You can find the video tutorial under @wizard-tutorial-url, in case you want to watch it again.)"
+    }
+  }
+}

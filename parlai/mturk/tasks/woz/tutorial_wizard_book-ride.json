@@ -1,0 +1,318 @@
+{
+  "Steps": [
+    {
+      "Guide": "Hello, welcome to this tutorial. Before you can talk to real users, you have to get to know this user interface and the details of your task. I will explain everything to you step-by-step. Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "Great! \nOn the left side of the screen you see two tabs. The first tab titled 'Instructions' shows a flow chart that you should follow during the dialogue whenever possible. The second tab shows a form that you can use to query a knowledge base. Send 'ok' to learn more."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "About the 'Instructions' tab: \nThe flow chart on the 'Instructions' tab tells you how you should respond to users when they behave according to plan. This might not always be possible, though, so sometimes you'll have to improvise. Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "More about the 'Instructions' tab: \nIf the flow chart is too small for you to read, you can click on it and it will open as a new tab. I will explain the meaning of the boxes in that chart later. Just remember: At any point in a dialogue, always make sure you know where you are on that chart! Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "About the 'Knowledge Base' tab: \nThe 'Knowledge Base' tab is a list of constraints and a 'Query' button. You can add constraints by selecting the kind of constraint in the top drop-down box and click on 'Add Constraint'. Some constraints you always have to know about before you can make a query. These are already listed (but not filled out), e.g. 'Customer Name', 'Departure Location', and others. During the dialogue, you will learn what the user is looking for, and enter his/her requirements into the form. The flow chart under the 'Instructions' tab indicates at what point in the dialogue you should click the 'Query' button. Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "So... What is the 'Add Constraint' button for?"
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*constraint.*" },
+      "Corrections": [
+        "I don't think so... But I might misunderstand if you misspelled something. Try again.",
+        "No. I mean, what does the 'Add Constraint' button add to your query?",
+        "Hmm... Still doesn't look right.",
+        "Ok, just write 'It adds a new constraint to the form'."
+      ]
+    },
+    {
+      "Guide": "Ok. And when should you use the 'Query' button?"
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*(chart|instruction).*" },
+      "Corrections": [
+        "I don't think so... But I might misunderstand if you misspelled something. Try again.",
+        "No. Remember what you should always be aware of during the dialogue. Try again.",
+        "Hmm... Still doesn't look right.",
+        "Ok, just write 'When the flow chart tells me to'."
+      ]
+    },
+    {
+      "Guide": "Good! In some situations you may need to improvise, but stick to the flow chart whenever possible and query the knowledge base as few times as possible! Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "Ok, it's time for you to chat with a user. I will simulate one for you. Send 'ok' when you are ready!"
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Hello" },
+    {
+      "Guide": "The user is greeting you without providing any further information. In this case, just say 'Hello, how can I help?'. "
+    },
+    {
+      "Wizard": "Hello, how can I help?",
+      "Corrections": [
+        "Please greet the user with 'Hello, how can I help?'",
+        "No. Just type 'Hello, how can I help?' and click on 'Send'.",
+        "Still not correct. Try again.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "I need to book a ride to Hogwarts." },
+    {
+      "Guide": "Here the user has already provided the first piece of information that you need (see box 1 in the flow chart). Step by step, ask the user for the remaining required information."
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*name.*" },
+      "Corrections": [
+        "This doesn't look right. You should ask for the customer name first.",
+        "No, please ask 'What is your name, please?'.",
+        "Sorry, that's still incorrect.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Albus Dumbledore." },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*(from|depart).*" },
+      "Corrections": [
+        "This doesn't look right. Did you ask for departure location?",
+        "No, please ask 'Where will you be travelling from?'.",
+        "Sorry, that's still incorrect.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "User": "I need somebody to pick me up at the front entrance of Central Station, and I have only 42 Credits to spend."
+    },
+    {
+      "Guide": "Have a look at the flow chart. \nBy now you have collected all the required information (box 1) and even one additional piece of information. Now you should click the 'Knowledge Base' tab and enter this information into the form. Leave the 'Request Type' field to 'Check', because you don't want to execute a booking just yet. Then click the 'Query' button, since box 2 in the flow chart tells you to."
+    },
+    {
+      "Wizard": {
+        "Action": "query",
+        "API": "book_ride",
+        "Constraints": [
+          {
+            "CustomerName": "\"Albus Dumbledore\""
+          },
+          {
+            "DepartureLocation": "\"front entrance of Central Station\""
+          },
+          {
+            "ArrivalLocation": "\"Hogwarts\""
+          },
+          {
+            "Price": "api.is_less_than(43)"
+          },
+          { "RequestType": "\"Check\"" }
+        ]
+      },
+      "Corrections": [
+        "That doesn't seem right. Did you query the knowledge base with all the right information? Try again.",
+        "No. Make sure you don't forget to add a constraint on the price, and you write 'front entrance of Central Station' as point of departure.",
+        "No... Maybe you chose 'price is less than 42'? But it should be 'price is less than 43', since 42 is still ok.",
+        "No. Many people tend to pick a particular price here, but you should select 'is less than' and '43'. If you did that, then something else must be wrong. Try again.",
+        "Still not quite right. Don't write anything. Just fill in the form and click on the 'Query' button under the form.",
+        "Something is still wrong. Try again.",
+        "No. You have two more attempts...",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "Well done. Note that the response of the knowledge base appears as a light-red bubble in this dialogue window. We call that a 'knowledge base item'. This is only visible to you, and so you'll have to describe to the user what you've found. When you do that, you should let us know which of the knowledge base items you are looking at (there might be several). To do so, you can click the 'Selected' button in any knowledge base item. Whenever you generate a new item (by clicking 'Query'), that item is always selected by default. So... why should you sometimes scroll up the dialogue history?"
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*(select).*" },
+      "Corrections": [
+        "So we know what item you are describing, but what do you have to do (besides scrolling back) before you describe a knowledge base item?",
+        "No, that still doesn't seem right.",
+        "No. Just write 'I scroll up and select the item that I want to describe, so you know what I am talking about'.",
+        "Nope. Typo?"
+      ]
+    },
+    {
+      "Guide": "Great! Now have a look at the result of the knowledge base query. Describe to the user what you searched for (confirming his/her inputs), what you have found, and ask if you should make a booking. This step is indicated by the lower blue box in the flow chart."
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*(albus).*" },
+      "Corrections": [
+        "Hmm... Did you mention the customer's name? You should confirm the user's inputs AND inform him about the result of your query.",
+        "No, that still doesn't seem right.",
+        "No. One more try.."
+      ]
+    },
+    { "User": "Hmm... I am undecided." },
+    {
+      "Guide": "This means you should follow the 'No' arrow in the chart and respond with box 4: Tell Albus by what additional criteria you can search (as listed in box 4)."
+    },
+    {
+      "Wizard": {
+        "Action": "utter",
+        "TextRegex": "^.*(provider|model).*(provider|model).*"
+      },
+      "Corrections": [
+        "Hmm... Did you mention all three things listed in Box 4? Try again.",
+        "No, you should list the three items in Box 4 in the flow chart. Try again.",
+        "No. You should just tell Albus what additional criteria you can search for, as listed in Box 4.",
+        "No, that still doesn't seem right.",
+        "No. One more try.."
+      ]
+    },
+    { "User": "Ok, I'd like Sirius to pick me up in a Tesla Taxi." },
+    {
+      "Guide": "Go ahead, and add these constraints to the form, and query the knowledge base again."
+    },
+    {
+      "Wizard": {
+        "Action": "query",
+        "API": "book_ride",
+        "Constraints": [
+          {
+            "CustomerName": "\"Albus Dumbledore\""
+          },
+          {
+            "DepartureLocation": "\"front entrance of Central Station\""
+          },
+          {
+            "ArrivalLocation": "\"Hogwarts\""
+          },
+          {
+            "Price": "api.is_less_than(43)"
+          },
+          { "DriverName": "\"Sirius\"" },
+          { "ServiceProvider": "\"Taxi\"" },
+          { "CarModel": "\"Tesla\"" },
+          { "RequestType": "\"Check\"" }
+        ]
+      },
+      "Corrections": [
+        "That doesn't seem right. Did you query the knowledge base with all the right information? Try again.",
+        "No. Make sure you don't forget to add a constraint on the price (less than 43), and you write 'front entrance of Central Station' as point of departure.",
+        "Still not quite right. Don't write anything. Just fill in the form and click on the 'Query' button under the form.",
+        "Something is still wrong. Try again.",
+        "No. You have two more attempts...",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Wizard": { "Action": "utter", "TextRegex": "^.*(tesla).*" },
+      "Corrections": [
+        "You should mention the car's model here. Try again.",
+        "No, that's not right. Try again.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Spiffing! Yes, I'd like to book that." },
+    {
+      "Guide": "Follow the arrow in the diagram that goes through 'Yes'. You see that now you should send the same knowledge base query again, but with the 'Request type' flag set to 'Book'. "
+    },
+    {
+      "Wizard": {
+        "Action": "query",
+        "API": "book_ride",
+        "Constraints": [
+          {
+            "CustomerName": "\"Albus Dumbledore\""
+          },
+          {
+            "DepartureLocation": "\"front entrance of Central Station\""
+          },
+          {
+            "ArrivalLocation": "\"Hogwarts\""
+          },
+          {
+            "Price": "api.is_less_than(43)"
+          },
+          { "DriverName": "\"Sirius\"" },
+          { "ServiceProvider": "\"Taxi\"" },
+          { "CarModel": "\"Tesla\"" },
+          { "RequestType": "\"Book\"" }
+        ]
+      },
+      "Corrections": ["No. One more try..."]
+    },
+    {
+      "Guide": "Very good! \nNow follow the last step of the diagram. Confirm the ride with id and license plate number to the user."
+    },
+    {
+      "Wizard": {
+        "Action": "utter",
+        "TextRegex": "^.*(license).*",
+        "PrimaryItem": { "DriverName": "Sirius" }
+      },
+      "Corrections": [
+        "Not quite right. Remember that you first have to select the knowledge base item that you get the information from (scroll up and select the right item).",
+        "No. Did you mention the license plate number?",
+        "Please make sure you've selected the right item and mention something like 'license plate: ...'.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Thank you, and goodbye!" },
+    {
+      "Guide": "Very good! The user is satisfied and says goodbye. You have successfully completed this tutorial and earned the qualification to talk to real users! \nNote, that in a real dialogue, you should click the 'dialogue completed' button on the left panel once the user has said goodbye.\nAlso note, that the next task might not be immediately available. Hope to see you again, later!"
+    }
+  ]
+}

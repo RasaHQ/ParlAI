@@ -1,0 +1,25 @@
+{
+  "title": "Happy Bank Balance",
+  "version": 1,
+  "api_names": ["bank_balance"],
+  "db": "bank.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @FullName-1 and would like to check your bank balance. Your account number is @AccountNumber-1 and your PIN is @PIN-1.",
+        "You are @FullName-1 and would like to check your bank balance. Unfortunately, you don't remember your account number or your PIN. Your date of birth is @DOB-1. For your security questions, your mother's maiden name is @Mother-1 and your childhood pet is @Pet-1."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant authenticate your account and give you your bank balance?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Authenticate the user and tell them their bank balance",
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue?"
+      ]
+    }
+  }
+}

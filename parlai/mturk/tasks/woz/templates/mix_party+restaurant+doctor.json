@@ -1,0 +1,44 @@
+{
+  "title": "Multitask",
+  "name": "Party, restaurant, doctor",
+  "version": 1,
+  "api_names": [
+    "party_rsvp",
+    "restaurant_search",
+    "restaurant_reserve",
+    "book_doctor_appointment"
+  ],
+  "db": "ride.json",
+  "schema_urls": {
+    "party_rsvp": "https://i.imgur.com/4Pz33hK.jpg",
+    "restaurant_reserve": "https://i.imgur.com/1YDWRLf.png"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. Do not end the dialogue before the MTurk bot has told you to do so. "
+      ],
+      "linear_guide": [
+        "In this task you can be very creative! You can come up with any details and queries, as long as they concern the topics we provide along the way. For now, say hello to your personal AI assistant that you just installed on your phone.",
+        "We'll give you some prompts along the way for inspiration. Right now, imagine you RSVP to a friend's party. Your friend's name is `HostName-1@schedule`.",
+        "Use your imagination to answer the questions by your AI assistant.",
+        null,
+        null,
+        "Come up with a reason to change topics to 'reserve a table at a restaurant'. (A phone call? Something you see? Something important that you almost forgot?)",
+        null,
+        null,
+        "You get a text from `HostName-1@schedule`: 'Hey! Have you RSVPed already?' (Of course you cannot answer to the text here, but this might change your dialogue with the AI assistant.)",
+        null,
+        null,
+        null,
+        "You `MildInjury@generic`. Get your AI assistant to make an appointment with `DoctorName@schedule`.",
+        null,
+        null,
+        "Ok, we hope you enjoyed this task. You can now let the conversation come to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. (You can find the single-task video tutorial under https://youtu.be/USrWF1ZyNWw, in case you want to watch it again.)"
+    }
+  }
+}

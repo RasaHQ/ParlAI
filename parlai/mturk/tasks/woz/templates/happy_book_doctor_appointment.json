@@ -1,0 +1,19 @@
+{
+  "title": "Happy Book Doctor Appointment",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["book_doctor_appointment"],
+  "schema_urls": {
+    "book_doctor_appointment": "https://i.imgur.com/J5zxJmO.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @PersonName-1 and would like to make an appointment with @DoctorName-1 for @Day-1 at @StartTimeHour-1. Your symptoms are @Symptoms-1. If no appointment can be made, just say goodbye."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book a doctor appointment!"
+    }
+  }
+}

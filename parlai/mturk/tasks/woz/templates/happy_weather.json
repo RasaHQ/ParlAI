@@ -1,0 +1,26 @@
+{
+  "title": "Weather",
+  "name": "Weather",
+  "db": "weather.json",
+  "version": 1,
+  "api_names": ["weather"],
+  "schema_urls": {
+    "weather": "https://i.imgur.com/yVozOzY.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Please find the weather for @Day-1.",
+        "Please find the weather for @Day-1 in @City-1."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant tell you the weather?",
+        "Did the AI Assistant say something about rain?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Tell the user the weather."
+    }
+  }
+}

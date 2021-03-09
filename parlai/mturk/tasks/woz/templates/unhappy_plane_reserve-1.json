@@ -1,0 +1,29 @@
+{
+  "title": "Unhappy Plane Reserve",
+  "db": "plane.json",
+  "version": 1,
+  "api_names": ["plane_reserve"],
+  "schema_urls": {
+    "plane_reserve": "https://i.imgur.com/QlpRuAX.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Reserve flight with id `id-1@plane`. Your name is `CustomerName@plane`."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant book your flight?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ],
+      "linear_guide": [
+        "Read the instructions on the left. In this dialogue, either act like a very annoying/grumpy person, or like a wise/serene person who'se constantly talking in profound-sounding riddles.",
+        null,
+        "The flight ID was actually `id-2@plane`.",
+        "Once you've booked the flight `id-2@plane` (or learned that booking is not possible), you can end the conversation. You can also keep writing for a bit, if you like :)"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book their flight."
+    }
+  }
+}

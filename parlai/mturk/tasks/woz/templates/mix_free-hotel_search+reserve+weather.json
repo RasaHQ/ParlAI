@@ -1,0 +1,32 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "hotel_search",
+    "hotel_reserve",
+    "weather"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `FullName@bank`\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`\n\n The AI Assistant can handle:\n- Search for a hotel (e.g. in the `Location-1@hotel` of town`)\n- Book a room at a hotel (e.g. `Name-1@hotel` or whatever the assistant can find for you; e.g. from `StartDate-1@hotel` to `EndDate-1@hotel`)\n- Checking the weather forecast in different Cities (e.g. `City-1@weather` or `City-2@weather`)"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'finding a hotel' and 'reserving a room at a hotel' (in any order), as shown on the left. You may also ask the assistant about the weather. ",
+        null,
+        null,
+        "Please have some smalltalk with the AI Assistant at some point in this dialogue.",
+        null,
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        "If it makes sense, use some negations ('I don't want X', or 'anything but Y', etc.)",
+        "Keep going until you've covered all the topics ('finding a hotel' and 'reserving a room at a hotel'). The conversation should continue at least until the last instruction is given.",
+        null,
+        "Ok, once you've touched on all the topics ('finding a hotel' and 'reserving a room at a hotel') and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`"
+    }
+  }
+}

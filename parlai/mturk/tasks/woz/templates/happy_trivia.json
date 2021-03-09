@@ -1,0 +1,25 @@
+{
+  "title": "Trivia",
+  "name": "Trivia",
+  "version": 1,
+  "api_names": ["trivia"],
+  "db": "trivia.json",
+  "schema_urls": {
+    "trivia": "https://i.imgur.com/T0c2Cxw.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You would like to play a game of trivia. You've already answered some of the questions, so you should start from question @QuestionStart-1 and play @QuestionCount-1 questions. You have answers for the following questions: @Answer-1, @Answer-2. For the rest, try your best!",
+        "You would like to play a game of trivia. You've already answered some of the questions, so you should start from question @QuestionStart-1 and play @QuestionCount-1 questions. You have answers for the following questions: @Answer-1, @Answer-2, @Answer-3. For the rest, try your best!"
+      ],
+      "completion_questions": [
+        "Did the AI Assistant succesfully run the trivia quiz?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Let the user play a trivia game. Query for and ask the questions until the user wants to stop. Note: Please DO NOT CHANGE THE COMPARATOR for the question number, i.e. leave it as 'is_equal_to'. "
+    }
+  }
+}

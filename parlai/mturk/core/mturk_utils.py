@@ -310,21 +310,21 @@ def create_hit_type(
                 has_locale_qual = True
         locale_requirements += qualifications
 
-    if not has_locale_qual:
-        locale_requirements.append(
-            {
-                'QualificationTypeId': '00000000000000000071',
-                'Comparator': 'In',
-                'LocaleValues': [
-                    {'Country': 'US'},
-                    {'Country': 'CA'},
-                    {'Country': 'GB'},
-                    {'Country': 'AU'},
-                    {'Country': 'NZ'},
-                ],
-                'RequiredToPreview': True,
-            }
-        )
+    # if not has_locale_qual:
+    #     locale_requirements.append(
+    #         {
+    #             'QualificationTypeId': '00000000000000000071',
+    #             'Comparator': 'In',
+    #             'LocaleValues': [
+    #                 {'Country': 'US'},
+    #                 {'Country': 'CA'},
+    #                 {'Country': 'GB'},
+    #                 {'Country': 'AU'},
+    #                 {'Country': 'NZ'},
+    #             ],
+    #             'RequiredToPreview': True,
+    #         }
+    #     )
 
     # Create the HIT type
     response = client.create_hit_type(

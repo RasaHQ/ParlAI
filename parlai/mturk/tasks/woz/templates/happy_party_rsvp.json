@@ -1,0 +1,25 @@
+{
+  "title": "Party RSVP",
+  "name": "Party RSVP",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["party_rsvp"],
+  "schema_urls": {
+    "party_rsvp": "https://i.imgur.com/4Pz33hK.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Your are @HostName-1 and would like to RSVP to a party. The host is @HostName-2 and the venue is @PartyName-1. You will be arriving at @StartTimeHour-1 and will bring @CoGuests-1 guests with you. You @NeedParking-1 parking. You have no dietary restrictions.",
+        "Your are @HostName-1 and would like to RSVP to a party. The host is @HostName-2 and the venue is @PartyName-1. You will be arriving at @StartTimeHour-1 and will bring @CoGuests-1 guests with you. You @NeedParking-1 parking. You can only eat @DietaryRestriction food."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant submit your RSVP for the party?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user RSVP for a party."
+    }
+  }
+}

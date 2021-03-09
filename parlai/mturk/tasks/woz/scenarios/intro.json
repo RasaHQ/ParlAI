@@ -1,0 +1,19 @@
+{
+  "title": "All",
+  "name": "All",
+  "version": 1,
+  "api_names": [],
+  "schema_urls": {},
+  "instructions": {
+    "User": {
+      "task_description": "Please follow the instructions of the 'MTurk System' bot in the dialogue.",
+      "completion_requirements": [],
+      "completion_questions": []
+    },
+    "Wizard": {
+      "task_description": "Please follow the instructions of the 'MTurk System' bot in the dialogue.",
+      "completion_requirements": [],
+      "completion_questions": []
+    }
+  }
+}

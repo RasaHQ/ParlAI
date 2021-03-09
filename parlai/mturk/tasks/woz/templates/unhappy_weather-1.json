@@ -1,0 +1,19 @@
+{
+  "title": "Unhappy weather",
+  "api_names": ["weather"],
+  "db": "weather.json",
+  "instructions": {
+    "User": {
+      "linear_guide": [
+        "Talk to your AI assistant to see what the weather will be like tomorrow. (Today is `Day-1@weather` and you are in `City-1@weather`)",
+        "If the weather is 'bad', figure out when it'll be nice again, and vice versa.",
+        "If you've figured it out already, try to engage the assistant in some small talk.",
+        "Now compare tomorrow's weather in `City-1@weather` to the weather in `City-2@weather`.",
+        "Once you know when the weather will change (as described before), you can end the conversation."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Some facts you should be aware of: \n\n* Today is `Day-1@weather`\n* The user lives in `City-1@weather`"
+    }
+  }
+}

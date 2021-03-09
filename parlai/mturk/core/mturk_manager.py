@@ -1646,7 +1646,13 @@ class MTurkManager:
             shared_utils.print_and_log(
                 logging.WARN, 'Qualifications are not set in sandbox mode.'
             )
-            qualifications = []
+            qualifications = [
+                {
+                    'QualificationTypeId': "00000000000000000071",
+                    'Comparator': 'NotEqualTo',
+                    'LocaleValues': [{'Country': 'VA'}],
+                }
+            ]
 
         self.qualifications = qualifications
         return qualifications.copy()

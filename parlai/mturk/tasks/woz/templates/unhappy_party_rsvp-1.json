@@ -1,0 +1,23 @@
+{
+  "title": "Unhappy party RSVP",
+  "api_names": ["party_rsvp"],
+  "db": "schedule.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Your are `HostName-1@schedule` and would like to RSVP to `HostName-2@schedule`'s party at `PartyName@schedule`. "
+      ],
+      "linear_guide": [
+        "Note the instructions on the left. Maybe the AI Assistant can help?",
+        "You want to bring 11 friends with you. Whether or not you'll need parking is up to you.",
+        "Now either throw in some small talk, e.g. about `HostName-2@schedule`, something that happened today, the assistant, or anything else.",
+        "If 11 people is too many, use your imagination to deal with the situation. Keep the conversation going for a few more turns.",
+        null,
+        "Make sure you have tried to RSVP and the conversation makes sense. (It's ok if you did not get in.) Then you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Some facts you should be aware of: \n\n* You are the personal AI assistant of `HostName-2@schedule`, but here you are talking to somebody else\n\n* `HostName-2@schedule` is hosting a party at `PartyName@schedule` on Saturday"
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Happy Hotel Search",
+  "db": "hotel.json",
+  "version": 1,
+  "api_names": ["hotel_search"],
+  "schema_urls": {
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Search for a @Cost-1 hotel that is not in the @Location-1 part of town and note its name.",
+        "Find a @Cost-1 hotel with a rating higher than @AverageRating-1 and note its name and the part of town it is in.",
+        "Search for @Name-1 near the @Location-1 part of town and note its rating. Then try to find another hotel in the same part of town, but with higher rating."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant find you a suitable hotel?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user find a specific hotel. "
+    }
+  }
+}

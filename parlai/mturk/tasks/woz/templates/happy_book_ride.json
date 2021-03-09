@@ -1,0 +1,24 @@
+{
+  "title": "Happy Book Ride",
+  "version": 1,
+  "api_names": ["book_ride"],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You want a ride from '@Location-1' to '@Location-2'. Your name is @CustomerName-1.",
+        "You are @CustomerName-1 and urgently need to find a ride from '@Location-1' to '@Location-2'. You want to avoid taking a @ServiceProvider-1 though.",
+        "You are @CustomerName-1. You want to grab your usual @ServiceProvider-1 ride to '@Location-2', but you don't want @DriverName as your driver. Right now you are at @Location-1.",
+        "You are @CustomerName-1 and would like to travel to @Location-1 from @Location-2 (in a @CarModel-1 car if possible). Please provide one piece of information at a time."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book a ride."
+    }
+  }
+}

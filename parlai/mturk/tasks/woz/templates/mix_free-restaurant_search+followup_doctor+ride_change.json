@@ -1,0 +1,42 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "restaurant_search",
+    "followup_doctor_appointment",
+    "ride_change",
+    "ride_status"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `CustomerName@ride`\n- Today is `Day@schedule`\n\n The AI Assistant can handle:\n- Find a restaurant (e.g. in the `Location-1@restaurant` or `Location-2@restaurant` of town)\n- Followup on doctor appointment (e.g. with `DoctorName-1@schedule` or `DoctorName-2@schedule`) \n- Changing details about a Taxi/Uber/Lyft ride (e.g. ride id `id@ride`) \n- Checking the status of a booked ride"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'Find restaurant', 'followup on doctor appointment' and 'changing a ride' (in any order), as shown on the left. You may also ask the assistant to check on the status of a booked ride. ",
+        null,
+        "You may attempt to do some smalltalk with the AI Assistant at any time.",
+        null,
+        null,
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        null,
+        null,
+        null,
+        "If it makes sense, use some negations ('I don't want', or 'anything but ...', etc.)",
+        null,
+        "Keep going :) - don't forget some smalltalk. Perhaps say something related to the first topic you talked about.",
+        null,
+        "Keep going until you've covered all the topics ('Find restaurant', 'followup on doctor appointment' and 'changing a ride'). The conversation should continue at least until the last instruction is given.",
+        null,
+        "Almost there. A few more turns.",
+        null,
+        null,
+        "Ok, once you've touched on all the topics ('Find restaurant', 'followup on doctor appointment' and 'changing a ride') and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule`"
+    }
+  }
+}

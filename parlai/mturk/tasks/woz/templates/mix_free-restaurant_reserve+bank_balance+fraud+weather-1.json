@@ -1,0 +1,42 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "restaurant_reserve",
+    "bank_balance",
+    "bank_fraud_report",
+    "trivia"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `FullName@bank`\n- Your bank account: `AccountNumber@bank`, with PIN `PIN@bank`\n- Today is `Day@schedule` the `Date@plane` of June, `Time@restaurant`\n\n The AI Assistant can handle:\n- Checking bank balance\n- Filing a bank fraud report\n- Reserving a table at a restaurant (e.g. `Name-1@restaurant` or `Name-2@restaurant`) for today\n- A game of trivia"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'Reserving a table at a restaurant', 'Bank balance checking' and 'Filing a bank fraud report' (in any order), as shown on the left. You may also play up to three rounds of trivia with the assistant. ",
+        null,
+        null,
+        "You may attempt to do some smalltalk with the AI Assistant at any time.",
+        null,
+        null,
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        null,
+        "If it makes sense, use some negations ('I don't want', or 'anything but ...', etc.)",
+        "If you like, you can ask for a game of trivia at any point. But don't play more than three rounds.",
+        null,
+        "Keep going :) - don't forget some smalltalk. Perhaps say something related to the first topic you talked about.",
+        null,
+        "Keep going until you've covered all the topics (reserving a table at a restaurant, bank balance checking, and bank fraud report). The conversation should continue at least until the last instruction is given.",
+        null,
+        "Almost there. A few more turns.",
+        null,
+        null,
+        "Ok, once you've touched on all the topics (restaurant, bank balance checking, and bank fraud report) and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule` the `Date@plane` of June, `Time@restaurant`"
+    }
+  }
+}

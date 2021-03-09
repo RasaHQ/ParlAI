@@ -1,0 +1,30 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "ride_status",
+    "ride_change",
+    "party_rsvp",
+    "trivia"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `CustomerName@ride`\n- You've booked a ride with id `id@ride`\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`\n\n The AI Assistant can handle:\n- Check the status of your ride (id `id@ride`)\n- Change something about your booked ride\n- RSVP you to a party (Example venues: `PartyName-1@schedule` or `PartyName-2@schedule`)"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'checking the status of -- and changing your booked taxi/Uber/Lyft ride' and 'party RSVP' (in any order), as shown on the left. You may also play up to two rounds of trivia with the assistant. ",
+        "Please have some smalltalk with the AI Assistant at some point in this dialogue.",
+        null,
+        "If it makes sense, use some negations ('I don't want X', or 'anything but Y', etc.)",
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        null,
+        "Ok, once you've touched on all the topics ('checking the status of -- and changing your booked taxi/Uber/Lyft ride' and 'party RSVP') and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "title": "Unhappy apartment search",
+  "version": 1,
+  "api_names": ["apartment_search"],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. "
+      ],
+      "linear_guide": [
+        "You finally decide it is time to move into your own apartment in the city. How exciting! You take out your phone and open you personal AI assistant app to find out what apartments are available. Say 'hello' to your AI Assistant.",
+        "Use the AI assistant to find an apartment that has a balcony facing `BalconySide-1@apartment` and at least `NumRooms@apartment` rooms.",
+        null,
+        "You realize that you don't want your apartment to be too close to `POIs-1@apartment`, but `POIs-2@apartment` nearby would be nice.",
+        "It occurs to you that a balcony on the `BalconySide-2@apartment` would actually be better than on the `BalconySide-1@apartment`. You may also engage in some smalltalk.",
+        "Make sure the apartment is not too expensive. `Price@apartment` is your upper limit.",
+        null,
+        "Once you've found something suitable, note if it has an elevator, on which floor it is, and what the name of the housing company is. Then bring the dialogue to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. NOTE: When users give PRICE limits, you usually have to use the 'is at most' comparator, not 'is equal to'.",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task."
+      ]
+    }
+  }
+}

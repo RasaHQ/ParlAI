@@ -1,0 +1,31 @@
+{
+  "title": "Unhappy Bank Balance",
+  "version": 1,
+  "api_names": ["bank_balance"],
+  "db": "bank.json",
+  "schema_urls": {
+    "bank_balance": "https://i.imgur.com/71cZyxI.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @FullName-1 and would like to check your bank balance. Please also follow the MTurk System Bot instructions."
+      ],
+      "linear_guide": [
+        "Check the task description on the left, first. Your account number is `AccountNumber-1@bank`, but you're not sure about your PIN.",
+        "Your date of birth is `DOB-1@bank`. For your security questions, your mother's maiden name is `Mother@bank`.",
+        "Engage in some smalltalk (e.g. about your account, the lottery, the security questions, finance, etc.)",
+        "You now think you remember you PIN again. It was either `PIN-1@bank` or `PIN-2@bank`.",
+        "Engage in more smalltalk and then also check the balance of your other account (`AccountNumber-2@bank` with the same PIN).",
+        "Once you got both bank balance statements, feel free to say something about them, and then end the conversation."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Authenticate the user and tell them their bank balance",
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue?"
+      ]
+    }
+  }
+}

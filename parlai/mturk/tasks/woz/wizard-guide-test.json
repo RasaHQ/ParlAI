@@ -1,0 +1,99 @@
+{
+  "Steps": [
+    {
+      "Guide": "Hello. This is a training dialogue that you have to master before you can talk to real users. Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "Please make sure don't type anything else. Just type 'ok' in the input field below and click on 'Send'.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "Great! \nOn the left side of the screen you see a flow chart that you should follow whenever possible. We will now simulate a user for you to chat with and explain this chart along the way. Send 'ok' to proceed."
+    },
+    {
+      "Wizard": "ok",
+      "Corrections": [
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "You have to type 'ok' in the input field below and click on 'Send'.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Hello" },
+    {
+      "Wizard": { "Action": "utter" },
+      "Corrections": [
+        "Please greet the user with 'Hello'",
+        "No. Just type 'Hello' and click on 'Send'.",
+        "No. Just type 'Hello' and click on 'Send'.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "My flight is delayed by 24h and so I need a hotel for the night." },
+    {
+      "Guide": "You see, the user wants to find a hotel. Thus, you should click on the 'hotel search' tab on the left. \nThe flow-chart indicates what you should do now. In particular, the first box means that if the user hasn't provided any specifics yet, you should tell him/her that you can search for hotels by name, location, cost, and rating. "
+    },
+    {
+      "Wizard": { "Action": "utter" },
+      "Corrections": [
+        "No, please inform the user by what criteria you can search.",
+        "No, please inform the user by what criteria you can search.",
+        "No, please inform the user by what criteria you can search.",
+        "No. One more try..."
+      ]
+    },
+    { "User": "Hmm... I am looking for something cheap and central." },
+    {
+      "Guide": "Now, please click the 'Knowledgebase' tab on the left and enter the two criteria that user mentions into the form. Then click on 'Query'."
+    },
+    {
+      "Wizard": { "Action": "query", "API": "hotel_search" },
+      "Corrections": [
+        "No, you have to query the 'hotel search' knowledge base.",
+        "It looks like you did not query the 'hotel search' knowledgebase. Did you select the right tabs? \nYou have to select 'Hotel search' on the left and 'Knowledge base' on the top.",
+        "Still not quite right. Don't write anything. Just fill in the form and click on the 'Query' button under the form.",
+        "No. One more try..."
+      ]
+    },
+    {
+      "Guide": "Great! Now have a look at the result of the knowledge base query. Describe to the user what you searched for (confirming his/her inputs) and what you have found. This step is indicated by the green box in the flow chart."
+    },
+    {
+      "Wizard": { "Action": "utter" },
+      "Corrections": [
+        "No. Please describe to the user what you searched for (confirming his/her inputs) and what you have found.",
+        "No, don't do anything but writing your reply and click 'Send'.",
+        "No. One more try.."
+      ]
+    },
+    {"User":  "That looks good! Thank you."},
+    {
+      "Guide": "The user indicates that he/she is satisfied, but, according to the flow chart, you should still check if the user wants to search for something else. "
+    },
+    {
+      "Wizard": { "Action": "utter" },
+      "Corrections": [
+        "No, You should ask if the user wants to search for something else.",
+        "Please check if the user wants to search for something else.",
+        "No. One more try..."
+      ]
+    },
+    {"User":  "No, thanks. Bye!"},
+    {
+      "Guide": "Very good! The user is satisfied and says goodbye. Now follow the last step in the flow chart."
+    },
+    {
+      "Wizard": "Goodbye",
+      "Corrections": [
+        "Please just write 'Goodbye' - nothing else.",
+        "No, please just write 'Goodbye' - nothing else.",
+        "No. One more try..."
+      ]
+    }
+  ]
+}

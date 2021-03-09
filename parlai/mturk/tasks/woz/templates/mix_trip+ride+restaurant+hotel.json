@@ -1,0 +1,60 @@
+{
+  "title": "Multitask",
+  "name": "Lost in the city",
+  "version": 1,
+  "api_names": [
+    "trip_directions",
+    "book_ride",
+    "ride_status",
+    "ride_change",
+    "restaurant_search",
+    "hotel_search"
+  ],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "restaurant_search": "https://i.imgur.com/wnmwuOT.jpg"
+  },
+  "instructions": {
+    "User": {
+      "completion_requirements": [
+        "The MTurk Assistant says you can end the conversation."
+      ],
+      "completion_questions": [
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ],
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. Do not end the dialogue before the MTurk bot has told you to do so. "
+      ],
+      "linear_guide": [
+        "In this task you can be very creative! You can come up with any details and queries. Right now, imagine you are lost in a big city. Ask your personal AI assistant for help!",
+        "Come up with some place you want to go to and find a way to get there by chatting with the assistant.",
+        null,
+        null,
+        "You start to feel hungry.",
+        null,
+        null,
+        "You might also need a place to stay for the night.",
+        null,
+        null,
+        "If your assistant booked a ride for you to get around, check on the ride's status.",
+        "If you got some walking instructions from the assistant, imagine you reached your destination now, but something is not the way it's supposed to be (you have to come up with the 'what').",
+        "If you did check for the ride's status and it's more than 10 minutes away, cancel the ride and ask for walking instructions. Otherwise, change something about your ride (you have to come up with the 'what').",
+        "If you were walking and your destination wasn't the way it was supposed to be, get whatever help the assistant can give you in this situation.",
+        "Ok. In the next few turns you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. (You can find the single-task video tutorial under https://youtu.be/USrWF1ZyNWw, in case you want to watch it again.)",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task."
+      ]
+    }
+  }
+}

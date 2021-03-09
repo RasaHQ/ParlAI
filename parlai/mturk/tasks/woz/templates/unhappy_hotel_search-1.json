@@ -1,0 +1,41 @@
+{
+  "title": "Hotel Search",
+  "name": "Hotel Search",
+  "db": "hotel.json",
+  "version": 1,
+  "api_names": ["hotel_search"],
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Search for `Name-1@hotel` near the `Location-1@hotel` part of town and note its rating. Follow the instructions on the left for now."
+      ],
+      "linear_guide": [
+        null,
+        null,
+        "You just remember from a previous visit that the `Location-1@hotel` of town is typically very noisy. Make sure to check whether there is a `Name-1@hotel` in the `Location-3@hotel` part of town and note down its rating.",
+        "Actually, you remember reading on a blog that the `Location-2@hotel` of town is very trendy at the moment, check whether there is a `Name-1@hotel` in the `Location-2@hotel` part of town and note down its rating.",
+        "You remember that your partner is not a fan of the franchise to which the `Name-1@hotel` belongs to. Ask the assistant about the rating of the `Name-2@hotel` in the `Location-2@hotel` part of town.",
+        "Make some smalltalk about things you're planning to do in town such as museums you want to see, concerts you want to go to, or bars and restaurants you are excited about. Be creative.",
+        "You remember a friend stayed at the `Name-3@hotel` before - compare the rating of the `Name-2@hotel` to that of the `Name-3@hotel` in the `Location-2@hotel` part of town.",
+        "Thank the assistant for their help and bring the conversation to a natural end."
+      ],
+      "completion_requirements": [
+        "You have reserved a hotel or found that none is available."
+      ],
+      "completion_questions": [
+        "Did the assistant reserve your hotel?",
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user find a specific hotel."
+    }
+  }
+}

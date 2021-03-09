@@ -1,0 +1,23 @@
+{
+  "title": "Happy Plane Reserve",
+  "db": "plane.json",
+  "version": 1,
+  "api_names": ["plane_reserve"],
+  "schema_urls": {
+    "plane_reserve": "https://i.imgur.com/QlpRuAX.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Reserve flight with id @id-1. Your name is @CustomerName-1"
+      ],
+      "completion_questions": [
+        "Did the AI Assistant book your flight?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user book their flight."
+    }
+  }
+}

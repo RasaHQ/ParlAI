@@ -1,0 +1,43 @@
+[
+    {
+        "Name": "BankName",
+        "Type": "Categorical",
+        "Categories": ["Chase", "Bank of America", "PNC", "Wells Fargo"]
+    },
+    {"Name": "BankBalance", "Type": "Integer", "Min": 0, "Max": 10000},
+    {
+        "Name": "FullName",
+        "Type": "Categorical",
+        "Categories": ["Brian White", "Sarah Brown", "Tyler Jones", "Katarina Miller", "John Smith", "Jane Doe"]
+    },
+    {
+        "Name": "PIN",
+        "Type": "Categorical",
+        "Categories": ["9431", "9503", "5380", "7402", "3941", "0314", "1596", "3100"]
+    },
+    {
+        "Name": "AccountNumber",
+        "Type": "Categorical",
+        "Categories": ["93418043810", "85731890", "153531981", "351531510", "84318931431", "68318931", "95381901", "9931939443153"]
+    },
+    {
+        "Name": "DOB",
+        "Type": "Categorical",
+        "Categories": ["25/03/1998", "04/04/1990", "06/08/1985", "12/12/2001", "15/09/1940", "08/06/1963", "29/02/1980", "31/06/1996"]
+    },
+    {
+        "Name": "Mother",
+        "Type": "Categorical",
+        "Categories": ["Cooper", "Miller", "Wong", "Sanchez", "Sanders"]
+    },
+    {
+        "Name": "Pet",
+        "Type": "Categorical",
+        "Categories": ["Poppy", "Molly", "Charlie", "Buddy", "Nemo"]
+    },
+    {
+        "Name": "Fraud",
+        "Type": "Categorical",
+        "Categories": ["Somebody has transferred $500 from your account.", "There has been suspicious behavior on your account recently, with frequent money transfers of $10 over the past week.", "You have lost your debit card and before you could cancel it, somebody withdrew $300 at an ATM."]
+    }
+]

@@ -1,0 +1,42 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "apartment_search",
+    "book_apartment_viewing",
+    "book_ride",
+    "weather"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `CustomerName@ride`\n- Today is `Day@schedule`\n\n The AI Assistant can handle:\n- Find an apartment (prices are in 'credits')\n- Schedule an apartment viewing \n- Calling a Taxi/Uber/Lyft ride \n- Checking the weather forecast in different Cities (e.g. `City-1@weather` or `City-2@weather`)"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'Find apartment', 'Schedule apartment viewing' and 'Calling a ride' (in any order), as shown on the left. You may also ask the assistant to check the weather. ",
+        null,
+        "You may attempt to do some smalltalk with the AI Assistant at any time.",
+        null,
+        null,
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        null,
+        null,
+        null,
+        "If it makes sense, use some negations ('I don't want', or 'anything but ...', etc.)",
+        null,
+        "Keep going :) - don't forget some smalltalk. Perhaps say something related to the first topic you talked about.",
+        null,
+        "Keep going until you've covered all the topics ('Find apartment', 'Schedule apartment viewing' and 'Calling a ride'). The conversation should continue at least until the last instruction is given.",
+        null,
+        "Almost there. A few more turns.",
+        null,
+        null,
+        "Ok, once you've touched on all the topics ('Find apartment', 'Schedule apartment viewing' and 'Calling a ride') and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. NOTE: When users give PRICE limits, you usually have to use the 'is at most' comparator, not 'is equal to'. Assume:\n\n- Today is `Day@schedule`"
+    }
+  }
+}

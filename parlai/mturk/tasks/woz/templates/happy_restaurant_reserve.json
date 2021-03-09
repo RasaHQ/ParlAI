@@ -1,0 +1,26 @@
+{
+  "title": "Restaurant Reserve",
+  "name": "Restaurant Reserve",
+  "db": "restaurant.json",
+  "version": 1,
+  "api_names": ["restaurant_reserve"],
+  "schema_urls": {
+    "restaurant_reserve": "https://i.imgur.com/1YDWRLf.png"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Reserve a table at @Name-1 at @Time-1 for @MaxPartySize-1 people. Your name is @CustomerName-1.",
+        "Make a reservation at @Name-1 for @MaxPartySize-1 people at @Time-1. Your name is @CustomerName-1."
+      ],
+      "completion_requirements": ["You have reserved a table."],
+      "completion_questions": [
+        "Did the AI Assistant reserve your restaurant?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user make a reservation at a restaurant."
+    }
+  }
+}

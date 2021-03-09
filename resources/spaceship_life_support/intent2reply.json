@@ -1,0 +1,12 @@
+{
+    "hello": "Hello, how can I help?",
+    "ask_name": "Please provide your name.",
+    "spaceship_ask_lock_manufacturer": "Please provide the name of the lock manufacturer.",
+    "spaceship_ask_colour_top_cable": "Please provide the color of the first cable.",
+    "spaceship_ask_colour_second_cable": "Please provide the color of the second cable.",
+    "spaceship_inform_outcome": "Ok, I can reach the control panel now... {message:s}",
+    "spaceship_bye": "Goodbye.",
+    "spaceship_inform_nothing_found": "Sorry, I cannot do that.",
+    "anything_else": "Is there anything else that I can do for you?",
+    "out_of_scope": "I am sorry, I don't quite understand what you mean. I am only able to help you with repairing the spaceship's life support."
+}

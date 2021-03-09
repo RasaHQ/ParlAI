@@ -1,0 +1,19 @@
+{
+  "title": "Happy Apartment Search",
+  "db": "apartment.json",
+  "version": 1,
+  "api_names": ["apartment_search"],
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Search for a @NumRooms-1 bedroom apartment. The unit should be on floor @Level-1 or higher. Your price budget is @Price-1 credits.",
+        "Search for a @NumRooms-1 bedroom apartment. The unit should be on floor @Level-1 or higher. Your price budget is @Price-1 credits. You would like to have a balcony that is NOT facing @BalconySide-1.",
+        "Search for a @NumRooms-1 bedroom apartment. The unit should be on floor @Level-1 or higher. Your price budget is @Price-1 credits. You would like the building to have an elevator.",
+        "Search for a @NumRooms-1 bedroom apartment. The unit should be on floor @Level-1 or higher. Your price budget is @Price-1 credits. You would like the building to have a balcony and be near @POIs-1."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user find a specific apartment. NOTE: When users give PRICE limits, you usually have to use the 'is at most' comparator, not 'is equal to'."
+    }
+  }
+}

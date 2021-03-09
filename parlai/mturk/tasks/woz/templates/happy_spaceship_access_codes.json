@@ -1,0 +1,24 @@
+{
+  "title": "Happy Spaceship Access Codes",
+  "db": "spaceship.json",
+  "version": 1,
+  "api_names": ["spaceship_access_codes"],
+  "schema_urls": {
+    "spaceship_access_codes": "https://i.imgur.com/FmuNL4M.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Your spaceship is under attack! You must enter the combat deck to mount a counterattack. Unfortunately, you are locked out. Please work with the spaceship's onboard computer to unlock the door. You (@UserName-1) are the ship's @UserRank-1. You have been a given a @CodeType-1: @Code-1."
+      ],
+      "completion_questions": [
+        "Did the ship's computer unlock the door to the combat deck?",
+        "Did the ship's computer stay calm and helpful throughout the dialogue?",
+        "Did you enjoy this task?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Act as the spaceship's onboard computer and help the user unlock the combat deck."
+    }
+  }
+}

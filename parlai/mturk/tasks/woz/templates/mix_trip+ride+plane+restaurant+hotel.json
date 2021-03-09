@@ -1,0 +1,58 @@
+{
+  "title": "Multitask",
+  "name": "Family vacation planning",
+  "version": 1,
+  "api_names": [
+    "trip_directions",
+    "book_ride",
+    "ride_change",
+    "plane_search",
+    "plane_reserve",
+    "restaurant_search",
+    "hotel_search"
+  ],
+  "db": "ride.json",
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "restaurant_search": "https://i.imgur.com/wnmwuOT.jpg"
+  },
+  "instructions": {
+    "User": {
+      "completion_requirements": [
+        "The MTurk Assistant says you can end the conversation."
+      ],
+      "completion_questions": [
+        "Did the assistant stay calm and helpful throughout the dialogue?"
+      ],
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. Do not end the dialogue before the MTurk bot has told you to do so. "
+      ],
+      "linear_guide": [
+        "You (`CustomerName-1@ride`) and your partner `CustomerName-2@ride` are planning your well-deserved vacation. Together, you sit in front of your laptop and start up your new personal assistant. Perhaps it can help? Say hello!",
+        "Find out what the assistant can do for you.",
+        "Use the assistant's abilities to make some arrangements for your upcoming holiday. You can come up with any details, but here are a few things to know: \n\n* You live in `City-1@plane`\n* You either want to stay at your home city, or have your vacation near `City-2@plane`\n* You have `SmallNumber@generic` kid(s)",
+        null,
+        null,
+        "Keep going :)",
+        null,
+        null,
+        "`CustomerName-2@ride` says: all this vacation planning is making me hungry. Can we order some `Food-1@restaurant`?",
+        "Your child `CustomerName-3@ride` comes in and exclaims 'I want `Food-2@restaurant`'!",
+        null,
+        "Make sure you have at least made one arrangement for your upcoming holiday (e.g. booked a flight or a hotel). Then you can lead the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. (You can find the single-task video tutorial under https://youtu.be/USrWF1ZyNWw, in case you want to watch it again.)",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task."
+      ]
+    }
+  }
+}

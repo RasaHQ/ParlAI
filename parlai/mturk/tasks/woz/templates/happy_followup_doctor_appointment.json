@@ -1,0 +1,20 @@
+{
+  "title": "Happy Followup Doctor Appointment",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["followup_doctor_appointment"],
+  "schema_urls": {
+    "followup_doctor_appointment": "https://i.imgur.com/OdjFGll.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You (@PersonName-1) just finished your appointment with @DoctorName-1 and would like to followup to ensure you understood everything.",
+        "You (@PersonName-1) just finished your appointment with @DoctorName-1. Unfortunately, you forgot to write down the instructions the doctor gave you. Please followup and find out how often to take your medicine."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Inform the user of his/her doctor's orders."
+    }
+  }
+}

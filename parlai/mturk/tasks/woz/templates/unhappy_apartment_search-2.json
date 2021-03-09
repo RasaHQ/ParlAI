@@ -1,0 +1,36 @@
+{
+  "title": "Unhappy apartment search",
+  "version": 2,
+  "api_names": ["apartment_search"],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Follow the instructions and comments of the MTurk bot. "
+      ],
+      "linear_guide": [
+        "You are looking for your dream apartment! You take out your phone and open your personal AI assistant app to find out what apartments are available. Say 'hello' to your AI Assistant.",
+        "Imagine what your ideal apartment would look like (number of rooms, balcony, elevator, etc.) and describe it to the assistant.",
+        null,
+        "Think of some property of your dream apartment that it definitely should NOT have. Tell the assistant about that.",
+        null,
+        "Say something that refers back to the beginning of this conversation. Be creative!",
+        null,
+        "Now completely change your mind about what you're looking for.",
+        null,
+        null,
+        "Make an impossible request, or a joke. Then bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. NOTE: When users give PRICE limits, you usually have to use the 'is at most' comparator, not 'is equal to'.",
+      "completion_requirements": ["The user has said goodbye."],
+      "completion_questions": [
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? If yes, send us a mail and let us know how we can improve the task.",
+        "Do you think this user was especially creative in his/her queries?"
+      ]
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Free Multitask",
+  "version": 1,
+  "api_names": [
+    "plane_search",
+    "schedule_meeting",
+    "restaurant_reserve",
+    "party_rsvp",
+    "hotel_service_request"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Come up with your own scenario!\n\nAbout you:\n- Your name: `FullName@bank`\n- Your current location: `Name@hotel`\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`\n\n The AI Assistant can handle:\n- Searching for flights (e.g. from `City-1@plane` to `City-2@plane` or `City-3@plane`)\n- Schedule a meeting\n- Reserving a table at a restaurant (e.g. `Name-1@restaurant` or `Name-2@restaurant`) for today\n- RSVP you to a party (Example venues: `PartyName-1@schedule` or `PartyName-2@schedule`)\n- Request room service"
+      ],
+      "linear_guide": [
+        "Use your imagination to generate a conversation about the topics 'looking for a flight', 'schedule a meeting', 'RSVP to a party' and 'book a table at a restaurant' (in any order), as shown on the left. You may also make a request to your hotel's room service. ",
+        null,
+        null,
+        "You may attempt to do some smalltalk with the AI Assistant at any time.",
+        null,
+        null,
+        "If you haven't yet, it's time to change topic. You can also go back and forth between topics.",
+        "If it makes sense, use some negations ('I don't want', or 'anything but ...', etc.)",
+        null,
+        "If you like, you can ask for room service at any point. This is not necessary, however.",
+        null,
+        "Keep going :) - don't forget some smalltalk. Perhaps say something related to the first topic you talked about.",
+        null,
+        "Keep going until you've covered all the topics ('looking for a flight', 'schedule a meeting', 'RSVP to a party' and 'book a table at a restaurant'). The conversation should continue at least until the last instruction is given.",
+        null,
+        "Almost there. A few more turns.",
+        null,
+        null,
+        "Ok, once you've touched on all the topics ('looking for a flight', 'schedule a meeting', 'RSVP to a party' and 'book a table at a restaurant') and engaged in some smalltalk, you can bring the conversation to a natural close."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Assume:\n\n- Today is `Day@schedule` the `Date@plane`, `Time@restaurant`"
+    }
+  }
+}

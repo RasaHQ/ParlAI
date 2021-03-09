@@ -1,0 +1,32 @@
+[
+  {
+    "Name": "LockManufacturer",
+    "Type": "Categorical",
+    "Categories": ["Fortune Brands", "Diebold", "Ingersoll", "ISS Alpha"]
+  },
+  {
+    "Name": "Color",
+    "Type": "Categorical",
+    "Categories": ["Red", "Green", "Blue", "Yellow", "White", "Black", "Orange"]
+  },
+  {
+    "Name": "UserRank",
+    "Type": "Categorical",
+    "Categories": ["First Officer", "Chief Engineer", "Bartender"]
+  },
+  {
+    "Name": "CodeType",
+    "Type": "Categorical",
+    "Categories": ["Clearance Code", "Access Code"]
+  },
+  {
+    "Name": "Code",
+    "Type": "Categorical",
+    "Categories": ["031431", "93103", "9315831", "639431", "425931"]
+  },
+  {
+    "Name": "UserName",
+    "Type": "Categorical",
+    "Categories": ["Luke", "Han", "Chewie", "Leia", "Yoda", "Rey", "Kylo"]
+  }
+]

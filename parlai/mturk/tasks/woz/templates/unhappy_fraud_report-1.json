@@ -1,0 +1,28 @@
+{
+  "title": "Unhappy fraud report",
+  "api_names": ["bank_fraud_report"],
+  "db": "bank.json",
+  "instructions": {
+    "User": {
+      "linear_guide": [
+        "`Fraud-1@bank` Quickly you contact the bank-system's AI assistant. Surely it can help?",
+        "You are `FullName@bank`. Your account number is `AccountNumber-1@bank`, but you forgot your PIN. (You might need your mother's maiden name for the security questions: `Mother@bank`.)",
+        null,
+        null,
+        "Now you remember you PIN again. Maybe. It was either `PIN-1@bank` or `PIN-2@bank`.",
+        "Choose: Complain about your situation; make a joke; or write something else that's unexpected yet somehow fits the conversation.",
+        null,
+        "Once the AI tells you that the report has been filed, you can end the dialogue. Otherwise, keep going and try to get the report filed (you can be creative about PINs and names)."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Some facts you should be aware of: \n\n* You are the customer service AI of the international banking system",
+      "completion_questions": [
+        "Did the user seem confused? (He or she may have been instructed to be.)",
+        "Did the user change his/her mind about what he/she wants at any time?",
+        "Did the user become aggressive or annoyed during the dialogue? (Note: some users may be instructed to be annoying.)",
+        "Where you unsure about what to do at any time? (Feel free to send us an email with details.)"
+      ]
+    }
+  }
+}

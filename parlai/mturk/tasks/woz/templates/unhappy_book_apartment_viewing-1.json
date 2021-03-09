@@ -1,0 +1,33 @@
+{
+  "title": "Unhappy Book Apartment Viewing",
+  "db": "schedule.json",
+  "version": 1,
+  "api_names": ["book_apartment_viewing"],
+  "schema_urls": {
+    "ride_status": "https://i.imgur.com/yjjqvuM.jpg",
+    "ride_change": "https://i.imgur.com/eFNOMNJ.jpg",
+    "book_ride": "https://drive.google.com/uc?id=1zYWS2H0XMuJEoy6QRWKr51weyVztMZai",
+    "hotel_search": "https://i.imgur.com/BkUBBg7.jpg",
+    "hotel_reserve": "https://i.imgur.com/tgOz4pz.jpg",
+    "book_apartment_viewing": "https://i.imgur.com/rjpZovV.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are interested in viewing an apartment. Please schedule a viewing at `ApartmentName-1@schedule` for `Day-1@schedule` at `StartTimeHour-1@schedule`. Your name is `PersonName-1@schedule`. You cannot remember if you had payed the application fee. "
+      ],
+      "linear_guide": [
+        "Say hallo to the AI Assistant.",
+        null,
+        "You suddenly remember that you have a `ImportantMeeting@generic` on `Day-1@schedule` at `StartTimeHour-1@schedule`.",
+        "Ask something about the apartment, or engage in smalltalk, or make a joke.",
+        "You cannot remember if you had payed the application fee. Find a way to make an appointment anyway. If no date is available, change date and/or time until something works. If you already got the appointment, engage in smalltalk.",
+        "Once you've scheduled the viewing, say something about your `ImportantMeeting@generic`.",
+        "When you are done with all the instructions, bring the conversation to a natural close. "
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user schedule an apartment viewing."
+    }
+  }
+}

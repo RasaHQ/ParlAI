@@ -1,0 +1,34 @@
+{
+  "title": "Multitask",
+  "name": "Planning a birthday party",
+  "version": 1,
+  "api_names": [
+    "party_plan",
+    "weather",
+    "restaurant_search",
+    "restaurant_reserve"
+  ],
+  "db": "ride.json",
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You (`HostName-1@schedule`) and your friend `HostName-2@schedule` want to organize a birthday party on `Day@schedule`. You expect `SizeLimit@schedule` guests to come."
+      ],
+      "linear_guide": [
+        "Maybe the AI Assistant can help? Say hello and ask if it can help you plan the party.",
+        "`HostName-2@schedule` says: 'I think the `PartyName@schedule` is quite nice'.",
+        null,
+        "It occurs to you that if the weather is nice, you might just have the party outside somewhere. Ask your assistant what the weather will be like on `Day@schedule`.",
+        "`HostName-2@schedule` says: 'Yeah, actually, if the weather is good, we could just go out to the park and book a restaurant for the evening'. You agree. So depending on the weather, either continue searching / booking the venue, or ask your assistant to help you find and book a restaurant for `Day@schedule` evening.",
+        "Note: You are located in the `Location@restaurant` of town, which you may or may not take into account if you search for a restaurant.",
+        "When the question comes up: you both like `Food-1@restaurant` and `Food-2@restaurant`, but no `Food-3@restaurant`.",
+        null,
+        null,
+        "When you are done booking (not just finding!) either a restaurant or a party venue, you can say goodbye and end the dialogue. This might take a while though, e.g. in case the venue is not available."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Note: If the user already knows a restaurant name, use 'restaurant reserve', otherwise use 'restaurant search'."
+    }
+  }
+}

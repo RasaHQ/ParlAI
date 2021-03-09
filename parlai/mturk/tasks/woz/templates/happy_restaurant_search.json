@@ -1,0 +1,30 @@
+{
+  "title": "Restaurant Search",
+  "name": "Restaurant Search",
+  "db": "restaurant.json",
+  "version": 1,
+  "api_names": ["restaurant_search"],
+  "schema_urls": {
+    "restaurant_search": "https://i.imgur.com/wnmwuOT.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "Search for a @Cost-1 priced restaurant in the @Location-1 part of town.",
+        "Find a @Cost-1 priced restaurant with a rating higher than @AverageRating-1",
+        "Find a @Cost-1 priced restaurant that does deliveries.",
+        "Find a @Cost-1 priced @Food-1 restaurant in the @Location-1 part of town.",
+        "Find a @Cost-1 priced @Food-1 restaurant that takes reservations.",
+        "Search for @Name-1 near the @Location-1 part of town."
+      ],
+      "completion_requirements": ["You have found a restaurant."],
+      "completion_questions": [
+        "Did the AI Assistant find you a suitable restaurant?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user find a restaurant."
+    }
+  }
+}

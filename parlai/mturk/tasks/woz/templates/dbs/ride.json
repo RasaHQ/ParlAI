@@ -1,0 +1,44 @@
+[
+  { "Name": "Price", "Type": "Integer", "Min": 5, "Max": 50 },
+  { "Name": "AllowsChanges", "Type": "Boolean" },
+  { "Name": "DurationMinutes", "Type": "Integer", "Min": 5, "Max": 30 },
+  {
+    "Name": "ServiceProvider",
+    "Type": "Categorical",
+    "Categories": ["Uber", "Lyft", "Taxi"]
+  },
+  {
+    "Name": "Location",
+    "Type": "Categorical",
+    "Categories": [
+      "Forbes and Murray",
+      "Craig and Center",
+      "Broadway and Main",
+      "5th and Main",
+      "Airport",
+      "Hospital",
+      "University"
+    ]
+  },
+  {
+    "Name": "CustomerName",
+    "Type": "Categorical",
+    "Categories": ["Mark", "John", "Ben", "Angela", "Alexis"]
+  },
+  {
+    "Name": "DriverName",
+    "Type": "Categorical",
+    "Categories": ["Mark", "John", "Dave", "Connor", "Alex"]
+  },
+  {
+    "Name": "CarModel",
+    "Type": "Categorical",
+    "Categories": ["Honda", "Toyota", "Corolla", "Tesla", "BMW", "Ford"]
+  },
+  {
+    "Name": "LicensePlate",
+    "Type": "Categorical",
+    "Categories": ["432 LSA", "313 EA9", "901 FSA", "019 EAS", "031 NGA"]
+  },
+  { "Name": "id", "Type": "Integer", "Min": 1, "Max": 1000 }
+]

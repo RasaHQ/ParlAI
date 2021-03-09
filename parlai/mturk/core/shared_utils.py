@@ -200,14 +200,14 @@ class AssignState:
         elif self.status == self.STATUS_PARTNER_DISCONNECT:
             command = data_model.COMMAND_INACTIVE_DONE
             text = (
-                'One of your partners disconnected in the middle of the '
+                'Your partner disconnected in the middle of the '
                 'HIT. We won\'t penalize you for their disconnect, so '
                 'please use the button below to mark the HIT as complete.'
             )
         elif self.status == self.STATUS_PARTNER_DISCONNECT_EARLY:
             command = data_model.COMMAND_INACTIVE_HIT
             text = (
-                'One of your partners disconnected in the middle of the '
+                'Your partner disconnected in the middle of the '
                 'HIT. We won\'t penalize you for their disconnect, but you'
                 ' did not complete enough of the task to submit the HIT. '
                 'Please return this HIT and accept a new one if you would '

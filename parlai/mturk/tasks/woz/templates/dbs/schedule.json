@@ -1,0 +1,163 @@
+[
+  {
+    "Name": "DoctorName",
+    "Type": "Categorical",
+    "Categories": ["Dr. Johnson", "Dr. Morgan", "Dr. Alexis"]
+  },
+  {
+    "Name": "GuestName",
+    "Type": "Categorical",
+    "Categories": ["John", "Michael", "Fred", "George"]
+  },
+  {
+    "Name": "MeetingReason",
+    "Type": "Categorical",
+    "Categories": [
+      "to discuss the quarterly reports",
+      "weekly scrum planning",
+      "allocate department budgets",
+      "plan project"
+    ]
+  },
+  {
+    "Name": "Name",
+    "Type": "Categorical",
+    "Categories": [
+      "John",
+      "Michael",
+      "Southside Venue",
+      "Dr. Johnson",
+      "North Heights Venue",
+      "West Bay Venue",
+      "Dr. Morgan",
+      "Fred",
+      "George",
+      "Dr. Alexis",
+      "Conference Room 43",
+      "Conference Room 91",
+      "One on Center Apartments",
+      "Shadyside Apartments",
+      "North Hill Apartments"
+    ]
+  },
+  {
+    "Name": "PartyName",
+    "Type": "Categorical",
+    "Categories": ["Southside Venue", "North Heights Venue", "West Bay Venue"]
+  },
+  {
+    "Name": "PartyNamePieces",
+    "Type": "Categorical",
+    "Categories": ["south", "high or above", "bay"]
+  },
+  {
+    "Name": "ApartmentName",
+    "Type": "Categorical",
+    "Categories": [
+      "One on Center Apartments",
+      "Shadyside Apartments",
+      "North Hill Apartments"
+    ]
+  },
+  {
+    "Name": "Day",
+    "Type": "Categorical",
+    "Categories": [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday"
+    ]
+  },
+  {
+    "Name": "HostName",
+    "Type": "Categorical",
+    "Categories": ["Mark", "John", "Ben", "Angela", "Alexis"]
+  },
+  {
+    "Name": "PersonName",
+    "Type": "Categorical",
+    "Categories": ["Mark", "John", "Ben", "Angela", "Alexis"]
+  },
+  {
+    "Name": "FoodRequest",
+    "Type": "Categorical",
+    "Categories": [
+      "vegetarian meal",
+      "three course meal, with steak and a vegan option",
+      "finger foods"
+    ]
+  },
+  {
+    "Name": "ApartmentMessage",
+    "Type": "Categorical",
+    "Categories": [
+      "I am very interested in this apartment and would like to see it right away!",
+      "I am particularly interested in the two bedroom units. If not, the studio is also fine.",
+      "If possible, I would also like to see the rooftop pool during my viewing."
+    ]
+  },
+  {
+    "Name": "DrinkRequest",
+    "Type": "Categorical",
+    "Categories": [
+      "wine and champagne",
+      "open bar with beer and cocktails",
+      "beer, but no corona"
+    ]
+  },
+  {
+    "Name": "StartTimeHour",
+    "Type": "Categorical",
+    "Categories": [
+      "11 am",
+      "12 pm",
+      "1 pm",
+      "2 pm",
+      "3 pm",
+      "4 pm",
+      "5 pm",
+      "6 pm",
+      "7 pm",
+      "8 pm",
+      "9 pm",
+      "10 pm"
+    ]
+  },
+  {
+    "Name": "NeedParking",
+    "Type": "Categorical",
+    "Categories": ["need", "don't need"]
+  },
+  {
+    "Name": "DietaryRestriction",
+    "Type": "Categorical",
+    "Categories": ["vegan", "vegetarian", "kosher", "halal"]
+  },
+  {
+    "Name": "Symptoms",
+    "Type": "Categorical",
+    "Categories": [
+      "runny nose, sneezing, and a general lack of energy",
+      "cough and a sore throat, ",
+      "headache, dizziness and muscle weakness"
+    ]
+  },
+  {
+    "Name": "SizeLimit",
+    "Type": "Integer",
+    "Min": 3,
+    "Max": 100,
+    "Enabled": "!lambda p: \"Conference\" in p[\"Name\"] or \"Venue\" in p[\"Name\"]"
+  },
+  {
+    "Name": "CoGuests",
+    "Type": "Integer",
+    "Min": 2,
+    "Max": 10,
+    "Enabled": "!lambda p: \"Conference\" in p[\"Name\"] or \"Venue\" in p[\"Name\"]"
+  }
+]

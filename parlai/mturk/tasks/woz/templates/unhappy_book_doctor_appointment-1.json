@@ -1,0 +1,24 @@
+{
+  "title": "Unhappy book doctor appointment",
+  "api_names": ["book_doctor_appointment"],
+  "db": "schedule.json",
+  "instructions": {
+    "User": {
+      "linear_guide": [
+        "Say hello to the AI assistant and ask for help (see instructions on the left).",
+        "Try to get an appointment as soon as possible (right now it is `StartTimeHour@schedule` on `Day@schedule`).",
+        "Keep asking for other times until the assistant has found a slot for you. Engage in smalltalk once this is done.",
+        "Say something about `DoctorName@schedule`, the AI Assistant, or something that has happened to you today. Be creative!",
+        "It occurs to you that you also want to make an appointment to get your kid `PersonName-2@schedule` vaccinated. Perhaps you can schedule a second appointment at the same time?",
+        null,
+        "Keep going until both yours and your kid's appointments are made (this should take a few more turns). Then say goodbye."
+      ],
+      "task_descriptions": [
+        "You are `PersonName-1@schedule` and would like to make an appointment with `DoctorName@schedule` for today (`Day@schedule`). You have had a `Symptoms@schedule` for two days now."
+      ]
+    },
+    "Wizard": {
+      "task_description": "Follow the flow charts and help the user. Some facts you should be aware of: \n\n* Right now it is `Day@schedule`, `StartTimeHour@schedule`"
+    }
+  }
+}

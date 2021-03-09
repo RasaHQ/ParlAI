@@ -1,0 +1,25 @@
+{
+  "title": "Unhappy Spaceship Life Support",
+  "db": "spaceship.json",
+  "version": 1,
+  "api_names": ["spaceship_life_support"],
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "The life support on your spaceship is failing! To save the lives of the crew, the ship's repair-robot has to get into the engineering deck, which is sealed due to a lack of air. Help the robot to enter the engineering deck! It has to temper with the lock (manufactured by '@LockManufacturer-1') and swap the positions of the @Color-1 cable and the @Color-2 cable. It already reached the door."
+      ],
+      "linear_guide": [
+        "Explain the general situation to the robot and ask some question.",
+        "Make lots of typos",
+        "Once the life support system is repaired (not earlier!), you can end the conversation. "
+      ],
+      "completion_questions": [
+        "Did the robot help successfully recover the life support?",
+        "Did the robot stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Act as the spaceship's onboard robot and help the user recover the life support."
+    }
+  }
+}

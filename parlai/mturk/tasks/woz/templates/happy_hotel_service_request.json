@@ -1,0 +1,24 @@
+{
+  "title": "Hotel Service Request",
+  "name": "Hotel Service Request",
+  "db": "hotel.json",
+  "version": 1,
+  "api_names": ["hotel_service_request"],
+  "schema_urls": {
+    "hotel_service_request": "https://i.imgur.com/bOxmgLz.jpg"
+  },
+  "instructions": {
+    "User": {
+      "task_descriptions": [
+        "You are @CustomerName-1 and you are staying in room @Room-1 of the @Name-1. You would like to make a service request for @Hour-1. Your request is: @ServiceRequest-1."
+      ],
+      "completion_questions": [
+        "Did the AI Assistant successfully submit your service request?",
+        "Did the AI Assistant stay calm and helpful throughout the dialogue?"
+      ]
+    },
+    "Wizard": {
+      "task_description": "Help the user make a hotel service request. "
+    }
+  }
+}
